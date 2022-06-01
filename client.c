@@ -45,7 +45,7 @@ int main(int argc, char **argv)
     sock = user_connect();
     if(sock == INVALID_SOCKET)
         printf("> error: couldn't connect to server\n");
-    else
+    else // everything went fine
         closesocket(sock);
     WSACleanup();
     return 0;
