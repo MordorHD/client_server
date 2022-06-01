@@ -6,7 +6,7 @@
 #include <stdbool.h>
 
 #define IP_ADDRESS "127.0.0.1" // your address
-#define PORT 0 // your port
+#define PORT 666 // your port
 
 SOCKET user_connect(void)
 {
@@ -48,5 +48,6 @@ int main(int argc, char **argv)
     else // everything went fine
         closesocket(sock);
     WSACleanup();
+    getc(stdin); // pause program
     return 0;
 }
