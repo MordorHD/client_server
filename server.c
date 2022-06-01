@@ -5,7 +5,7 @@
 #include <windows.h>
 #include <stdbool.h>
 
-#define IP_ADDRESS "127.0.01" // your IP address
+#define IP_ADDRESS "127.0.0.1" // your IP address
 #define PORT 0 // your port
 
 SOCKET start_server(void)
