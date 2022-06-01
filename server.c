@@ -39,7 +39,6 @@ SOCKET start_server(void)
 
 int main(int argc, char **argv)
 {
-    char buf[1024];
     SOCKET serverSock;
     SOCKET socks[2];
     WSADATA wsaData;
