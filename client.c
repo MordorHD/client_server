@@ -5,8 +5,8 @@
 #include <windows.h>
 #include <stdbool.h>
 
-#define IP_ADDRESS "" // your address
-#define PORT 0 // some port
+#define IP_ADDRESS "127.0.0.1" // your address
+#define PORT 0 // your port
 
 SOCKET user_connect(void)
 {
