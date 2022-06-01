@@ -39,8 +39,8 @@ int main(int argc, char **argv)
     printf("> Connecting to server...\n");
     if((iRetval = WSAStartup(MAKEWORD(2, 2), &wsaData)))
     {
-        printf("> error: Connecting failed(error code: 0xF0%x)\n", iRetval);
-        sock = 0;
+        printf("> error: WSAStartup failed (error code: 0xF0%x)\n", iRetval);
+        return 0xFF;
     }
     sock = user_connect();
     if(sock == INVALID_SOCKET)
